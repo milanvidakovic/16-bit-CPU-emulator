@@ -13,5 +13,6 @@ public class HALT extends Instruction {
 	@Override
 	public void exec(Context ctx) {
 		ctx.engine.stop();
+		ctx.pc.val++;
 	}
 }

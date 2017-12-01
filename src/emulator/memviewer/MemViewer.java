@@ -22,7 +22,7 @@ public class MemViewer extends JFrame {
 	public MemModel memMdl;
 	public JScrollPane src;
 
-	JLabel display = new JLabel();
+	public JLabel display = new JLabel();
 
 	public MemViewer(Context ctx, Engine eng, String catName) {
 		super();

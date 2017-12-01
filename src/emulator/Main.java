@@ -60,14 +60,14 @@ public class Main extends JFrame {
 	 * Memory viewer. Content updated when instruction
 	 * writes something in the memory.
 	 */
-	MemViewer memViewer;
+	public MemViewer memViewer;
 	/**
 	 * The same memory viewer, but focused on the stack. 
 	 * Used to observe stack frame.
 	 * Content updated when instruction
 	 * writes something in the memory.
 	 */
-	MemViewer sfViewer;
+	public MemViewer sfViewer;
 	
 	public MouseListener popupListener; 
 

@@ -11,7 +11,7 @@ public class NEG_A extends Instruction {
 	
 	@Override
 	public void exec(Context ctx) {
-		int res = (short)(~ctx.a.val);
+		int res = (short)(-ctx.a.val);
 		ctx.a.val = (short)res;
 		markFlags(res, ctx.a.val, ctx);
 		ctx.pc.val++;

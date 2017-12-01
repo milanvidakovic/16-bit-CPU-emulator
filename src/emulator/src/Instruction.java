@@ -85,7 +85,7 @@ public class Instruction {
 		} else {
 			ctx.z.val = 0;
 		}
-		if ((r & 0x8000) == 1) {
+		if ( (r < 0) || (r & 0x8000) == 1) {
 			ctx.p.val = 0;
 		} else {
 			ctx.p.val = 1;

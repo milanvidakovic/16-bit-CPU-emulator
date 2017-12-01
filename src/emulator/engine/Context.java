@@ -38,6 +38,10 @@ public class Context {
 		z.val = 0;
 		p.val = 0;
 		o.val = 0;
+		if (this.engine != null && this.engine.main.memViewer != null) {
+			engine.main.memViewer.display.setText("                ");
+			engine.main.sfViewer.display.setText("                ");
+		}
 	}
 
 	public void load(String fileName) {
